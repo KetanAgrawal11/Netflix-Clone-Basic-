@@ -1,0 +1,324 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.6)), url(assests/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    padding: 10px 10%; 
+}
+
+.header{
+    width: 95%;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo{
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-buttons{
+    display: flex;
+}
+
+.btn{
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.lang{
+    padding: 6px 15px;
+    background-color: rgba(23,23,23,0.7);
+    border: 0.0625rem solid rgba(239, 235, 235, 0.517);
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.lang img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.sign-in{
+    background-color: red;
+    width: 5rem;
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.big-heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.small-heading{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 20px 0px 0px 0px;
+    line-height: 1.5;
+}   
+
+.subscribe{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.header-input{
+    color: white;
+    background-color: rgba(23,23,23,0.7);
+    font-size: 1rem;
+    padding: 1rem 7rem 1rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(246,238,238,0.5);
+}
+
+.header-button{
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+}
+
+.header-button:hover{
+    cursor: pointer;
+}
+
+.sepration{
+    height: 7px;
+    background-color: rgb(50, 50, 46) ;
+}
+
+.first{
+    max-width: 75vw;
+    margin:3rem auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.sec-text{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.big{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.small{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.sec-Content{
+    position: relative;
+}
+
+.sec-Content img{
+    width: 35vw;
+    
+}
+
+.sec-Content video{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: 30vw;
+    z-index: -10;
+}
+
+.faq{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.faqheading{
+    margin-bottom: 2rem;
+}
+
+.questions{
+    margin: 0.7rem auto;
+    padding: 1.5rem;
+    background-color: rgb(45,45,45);
+    font-size: 1.5rem;
+    width: 75vw;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions:hover{
+    background-color: rgba(122, 121, 121, 0.601);
+    cursor: pointer;
+}
+
+.faqSubscribe{
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 4rem;
+}
+
+.footer{
+    width: 75vw;
+    margin: 4rem auto;    
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.footer a{
+    margin-top: 1.2rem;
+    width: 17vw;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-btn{
+    margin: 2rem 0;
+}
+
+.country{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+    .logo{
+        height: 2rem;
+    }
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    header{
+        height: 70vh;
+    }
+    .big-heading{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .small-heading{
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding: 20px 0px 0px 0px;
+    } 
+    .logo{
+        height: 1.5rem;
+    }
+    .subscribe{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-text{
+        height: 50vh;
+        width: 100%;
+    }
+    .header-button{
+        margin-top: 1rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    .header-input{
+        font-size: 1rem;
+        /* width: 5rem; */
+        padding: 1rem 5rem 1rem 1rem;
+    }
+    .first{
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+    }
+    .sec-text{
+        width: 90vw;
+        text-align: center;
+    }
+    .big{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .small{
+        margin-top: 1rem;
+        font-size: 1.125rem;
+    }
+    .sec-Content{
+        position: relative;
+    }
+    
+    .sec-Content img{
+        width: 80vw;
+        
+    }
+    
+    .sec-Content video{
+        width: 69vw;
+        right: 0px;
+        top: 50px;
+    }
+    .questions{
+        width: 90vw;
+        font-size: 1rem;
+    }
+    .sepration{
+        height: 4px;
+    }
+    .even{
+        flex-direction: column-reverse;
+    }
+    .items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
